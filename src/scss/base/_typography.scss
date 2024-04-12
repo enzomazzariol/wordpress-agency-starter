@@ -46,85 +46,105 @@ h6 {
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
 }
-h1 {
-		font-weight: $font-weight-bold;
-		font-size: 2.5rem;
-    line-height: 1.2;
-		margin-bottom: 0.5rem;
-		@media (min-width: 479px){
-			font-size: 3rem;
-		  }		 
-    @media (min-width: 768px){
-      font-size: 4rem;
-      }		
-}
-h2 {
-  font-weight: $font-weight-bold;
-  font-size: 2rem;
-  line-height: 1.3;
-  @media (min-width: 768px){
-    font-size: 2.8rem;
-    }	
-}
-h3 {
-  font-size: 1.5625rem;
-  line-height: 1.4em;
-  font-weight: $font-weight-bold;
-}
-h4 {
-  font-size: 1.125rem;
-  line-height: 1.5em;
-}
-h5 {
-  font-size: 1.0625rem;
-  line-height: 1.55em;
-}
+
 h6 {
   font-size: 0.75rem;
   text-transform: uppercase;
 }
+
 p {
-  font-size: .9rem;
-  line-height: 1.4;
-  margin: 0 0 10px;
-  color: $text-color;
-  font-family: $font-family-base;
-  @media (min-width: 768px){
-    font-size: 1rem;
-    }	
-}
-body {
-  background-color: $body-background;
-  color: $text-color;
-  margin: 0;
   font-size: 1rem;
-  text-align: left;
+  line-height: 1.4;
+  color: var(--TextColorSecond);
 }
 
-.text-color{
-  &-secondary{
-    color: $gray-200;
+h1 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.2;
+  margin-bottom: 0.5rem;
+  font-family: var(--HeaderFontFamily);
+  color: var(--TextColor);
+}
+
+@media (min-width: 479px) {
+  h1 {
+    font-size: 3rem;
   }
 }
 
-.text-size-large{
- font-size: 1.25rem;
- line-height: 1.4;
- @media (min-width: 768px){
-  font-size: 1.5rem;
-  }	
+@media (min-width: 768px) {
+  h1 {
+    font-size: 2.5rem;
+  }
 }
 
-.text-size-medium{
+h2 {
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 1.3;
+  font-family: var(--HeaderFontFamily);
+  color: var(--TextColor);
+}
+
+@media (min-width: 768px) {
+  h2 {
+    font-size: 2.4rem;
+    line-height: 1.5;
+  }
+}
+
+h3 {
+  font-size: 1.5625rem;
+  line-height: 1.4em;
+  font-weight: 700;
+  font-family: var(--HeaderFontFamily);
+  color: var(--TextColor);
+}
+
+h5{
+  font-size: 1.2rem;
+  font-weight: 700;
+  font-family: var(--HeaderFontFamily);
+  color: var(--TextColor);
+
+}
+
+.text-size-large {
+  font-size: 1.25rem;
+  line-height: 1.4;
+}
+
+@media (min-width: 768px) {
+  .text-size-large {
+    font-size: 1.5rem;
+  }
+}
+
+.text-size-medium {
   font-size: 1.1rem;
   line-height: 1.4;
-  @media (min-width: 768px){
-    font-size: 1.25rem;
-    }	
 }
 
-.text-size-small{
-  font-size: .85rem;
-  line-height: 1.4;
-  color: $gray-200;
+@media (min-width: 768px) {
+  .text-size-medium {
+    font-size: 1.25rem;
+  }
 }
+
+.text-size-small {
+  font-size: .9rem;
+  line-height: 1.4;
+}
+
+.text--blue{
+  color: $blue;
+}
+
+
+
+
+
+
+
+

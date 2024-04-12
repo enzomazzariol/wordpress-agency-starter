@@ -1,12 +1,33 @@
 .hero {
-  &-title {
-    color: $white;
+  min-height: 600px;
+
+  &-wrapper{
+    max-width: 1440px;
   }
-  &-subtitle {
-    color: $primary;
+
+  &-left {
+    background-color: $primary; 
+    background-image: linear-gradient(to top, #F6F1EE 20%, rgba(0,0,0,0) 20%); 
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    justify-items: center;
+    align-content: center;
   }
-  &-listen {
-    color: $white;
+
+  &-img{
+    border-radius: 10px;
+
+    &--left{
+      max-width: 50%;
+      object-fit: cover;
+    }
+
+    &--right{
+      aspect-ratio: 1/1;
+    
+      object-fit: cover;
+    }
   }
 }
 

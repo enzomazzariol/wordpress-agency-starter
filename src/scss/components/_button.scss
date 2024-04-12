@@ -1,57 +1,26 @@
-// -----------------------------------------------------------------------------
-// This file contains all styles related to the button component.
-// -----------------------------------------------------------------------------
-// _buttons.scss
-
-// Define variables for button styles
-$button-padding: 0.5rem 1rem;
-$button-border-radius: 8px;
-$button-font-size:  0.9rem;
-$button-solid-bg: $primary;
-$button-solid-color: $white;
-$button-outline-border: 1px solid $primary;
-$button-outline-color: $primary;
-$button-font-family: $headings-font-family;
-
-// Common styles for both buttons
-@mixin button-base() {
-  padding: $button-padding;
-  border-radius: $button-border-radius;
-  font-size: $button-font-size;
-  cursor: pointer;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;  
-}
-
-// Solid button
 .button {
-  @include button-base();
-  background-color: $button-solid-bg;
-  color: $button-solid-color;
-  @media (min-width: 768px){
-      padding: 0.5rem 1.5rem;
-      font-size: 1.1rem;
-    }		
-  &:hover, &:active, &:focus {
-    background-color: darken($button-solid-bg, 10%);
-    color: $button-solid-color;
-  }
-
-  &-big{
-    padding: 0.7rem 1.5rem;
-  }
+  padding: 0.8rem 1rem;
+  font-size: 0.9rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 8px;
 }
 
-// Outline button
-.button-outline {
-  @include button-base();
-  border: $button-outline-border;
-  color: $button-outline-color;
-  background-color: transparent;
+.button--primary, .button--primary:hover{
+  border: 1px solid $primary;
+  background-color: $primary;
+  color: #ffffff;
+}
 
-  &:hover, &:active, &:focus {
-    background-color: $button-outline-color;
-    color: $button-solid-color;
-  }
+.button--second, .button--second:hover{
+  border: 1px solid $blue;
+  background-color: $blue;
+  color: #ffffff;
+}
+
+.button--third, .button--third:hover{
+  border: 1px solid $green;
+  background-color: $green;
+  color: #ffffff;
 }
