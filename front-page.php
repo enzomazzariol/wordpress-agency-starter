@@ -95,72 +95,73 @@ $program4 = $program['program_4'];
             </p>
           </div>
         </div>
-        
-        <div class="row row-cols-md-5 g-2 justify-content-center">
-          <div class="col">
-            <div class="program">
-              <img class="program-img"
-              src="<?php echo esc_url( $program1['image']); ?>"
-                alt="background">
-              <div
-                class="program-wrapper program-wrapper-blue d-flex flex-column justify-content-end align-items-start p-4">
-                <p class="text-white">
-                    <?php echo esc_html( $program1['title'] ); ?>
-                </p>
-                <h5 class="text-white">
-                 <?php echo esc_html( $program1['description'] ); ?>
-                </h5>
+        <div class="container">
+          <div class="row row-cols-md-4 g-2 justify-content-center">
+            <div class="col">
+              <div class="program">
+                <img class="program-img"
+                src="<?php echo esc_url( $program1['image']); ?>"
+                  alt="background">
+                <div
+                  class="program-wrapper program-wrapper-blue d-flex flex-column justify-content-end align-items-start p-4">
+                  <p class="text-white">
+                      <?php echo esc_html( $program1['title'] ); ?>
+                  </p>
+                  <h5 class="text-white">
+                  <?php echo esc_html( $program1['description'] ); ?>
+                  </h5>
+                </div>
+
               </div>
 
             </div>
-
-          </div>
-          <div class="col">
-            <div class="program">
-              <img class="program-img"
-                src="<?php echo esc_url( $program1['image']); ?>"
-                alt="background">
-              <div
-                class="program-wrapper program-wrapper-black d-flex flex-column justify-content-end align-items-start p-4">
-                <p class="text-white">
-                <?php echo esc_html( $program2['title'] ); ?>
-                </p>
-                <h5 class="text-white">
-                <?php echo esc_html( $program2['description'] ); ?>
-                </h5>
+            <div class="col">
+              <div class="program">
+                <img class="program-img"
+                  src="<?php echo esc_url( $program1['image']); ?>"
+                  alt="background">
+                <div
+                  class="program-wrapper program-wrapper-black d-flex flex-column justify-content-end align-items-start p-4">
+                  <p class="text-white">
+                  <?php echo esc_html( $program2['title'] ); ?>
+                  </p>
+                  <h5 class="text-white">
+                  <?php echo esc_html( $program2['description'] ); ?>
+                  </h5>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="col">
-            <div class="program">
-              <img class="program-img"
-                src="<?php echo esc_url( $program1['image']); ?>"
-                alt="background">
-              <div
-                class="program-wrapper program-wrapper-green d-flex flex-column justify-content-end align-items-start p-4">
-                <p class="text-white">
-                <?php echo esc_html( $program3['title'] ); ?>
-                </p>
-                <h5 class="text-white">
-                <?php echo esc_html( $program3['description'] ); ?>
-                </h5>
+            <div class="col">
+              <div class="program">
+                <img class="program-img"
+                  src="<?php echo esc_url( $program1['image']); ?>"
+                  alt="background">
+                <div
+                  class="program-wrapper program-wrapper-green d-flex flex-column justify-content-end align-items-start p-4">
+                  <p class="text-white">
+                  <?php echo esc_html( $program3['title'] ); ?>
+                  </p>
+                  <h5 class="text-white">
+                  <?php echo esc_html( $program3['description'] ); ?>
+                  </h5>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="col">
-            <div class="program">
+            <div class="col">
+              <div class="program">
 
-              <img class="program-img"
-                src="<?php echo esc_url( $program1['image']); ?>"
-                alt="background">
-              <div
-                class="program-wrapper program-wrapper-black d-flex flex-column justify-content-end align-items-start p-4">
-                <p class="text-white">
-                <?php echo esc_html( $program4['title'] ); ?>
-                </p>
-                <h5 class="text-white">
-                <?php echo esc_html( $program4['description'] ); ?>
-                </h5>
+                <img class="program-img"
+                  src="<?php echo esc_url( $program1['image']); ?>"
+                  alt="background">
+                <div
+                  class="program-wrapper program-wrapper-black d-flex flex-column justify-content-end align-items-start p-4">
+                  <p class="text-white">
+                  <?php echo esc_html( $program4['title'] ); ?>
+                  </p>
+                  <h5 class="text-white">
+                  <?php echo esc_html( $program4['description'] ); ?>
+                  </h5>
+                </div>
               </div>
             </div>
           </div>

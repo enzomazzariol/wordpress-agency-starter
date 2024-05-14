@@ -67,5 +67,4 @@
 				
 				</div>
 			</nav>
-			<hr/>
 		</header><!-- #masthead -->
