@@ -239,6 +239,27 @@
   margin-bottom: 40px;
 }
 
+.support-title {
+  color: #444444;
+  font-family: $font-family-yaldevi;
+}
+
+.support-description {
+  color: #656A72;
+  font-family: $font-family-notosans;
+}
+
+.support-image-container {
+  
+}
+
+.support-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
 .donation{
   
   &-info {
@@ -247,14 +268,10 @@
     border-radius: 10px;
   }
 
-  &-text {
+  &-text, &-link {
     font-size: 0.9rem;
-    color: rgb(135, 134, 134);
-    display: inline-block;
-  }
-
-  &-link {
-    color: rgb(135, 134, 134);
+    color: #656A72;
+    font-family: $font-family-notosans;
     display: inline-block;
   }
 }
@@ -291,6 +308,11 @@
     transform-origin: 0 0;
     transform: rotate(-45deg);
     box-shadow: -3px 3px 3px 0 rgba(0,0,0,0.08);
+  }
+
+  &-title {
+    color: #444444;
+    font-family: $font-family-yaldevi;
   }
 }
 
@@ -340,7 +362,7 @@
     }
 
     &-text {
-      font-size: 26px;
+      font-size: 2rem;
       margin: 0;
       font-weight: bolder;
       font-family: $font-family-yaldevi;
@@ -362,15 +384,36 @@
 .sponsor {
   &-left {
     background-color: var(--SecondColor);
+    background-color: #205DA3;
   }
 
   &-right {
     background-color: var(--ThirdColor);
+    background-color: #64B94F;
   }
 
   &-background {
     width: 80%;
     border-radius: 5px;
+  }
+
+  &-title {
+    font-family: $font-family-yaldevi;
+    color: #FFFFFF;
+    font-size: 2rem;
+  }
+  
+  &-description {
+    font-family: $font-family-notosans;
+    color: #FFFFFF;
+  }
+
+  &-button {
+    width: 12px; 
+    height: 12px; 
+    border: 1px solid #FFFFFF;
+    border-radius: 55%; 
+    margin-left: 13px;
   }
 }
 
@@ -401,8 +444,19 @@
   }
 }
 
+.faqs-title {
+  font-family: $font-family-yaldevi;
+  font-size: 2rem;
+}
+
+.faqs-accordion {
+  width: 60%;
+}
+
+
 .question {
   border: none;
+  border-bottom: 2px solid #C4C4C4;
 }
 
 .plus-icon {
@@ -433,3 +487,72 @@ hr {
   color: #2F2F2F;
 }
 
+
+/* Responsive */
+
+
+
+
+@media screen and (max-width: 576px) { /* SM */
+  .faqs-accordion {
+    width: 80%;
+  }
+
+  .support-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    padding: 20px;
+  }
+
+  .program-container-text {
+    margin-bottom: 0.5rem;
+  }
+
+  .carousel-container {
+    width: 60%;
+  }
+
+  .program-wrapper {
+    aspect-ratio: 4/6;
+  }
+
+  .support-image-container {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .donation-text {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 768px) {  /*MD*/
+  .program-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .carousel-container {
+    width: 60%;
+  }
+
+  .program-wrapper {
+    aspect-ratio: 4/6;
+  }
+
+  .card-title, .card-description {
+    font-size: 1rem;
+  }
+
+  .support-image {
+    width: 90%;
+  }
+
+  .banner-text {
+    width: 90%;
+  }
+}

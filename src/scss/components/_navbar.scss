@@ -48,6 +48,15 @@
       box-shadow: none;
     }
   }
+
+  &-button {
+    background-color: $orange;
+    border: none;
+    width: 142px;
+    height: 43px;
+    color: #FFFFFF;
+    border-radius: 8px;
+  }
 }
 
 .nav {
@@ -61,4 +70,23 @@
       text-decoration: none;
     }
   }
+}
+
+.header {
+  &-logo {
+    background-color: #FBF8F6;
+    height: 40px;
+  }
+
+  &-list {
+    list-style: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+    .list-container {
+      display: flex;
+      justify-content: center !important;
+      align-items: center;
+    }
 }

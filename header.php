@@ -26,6 +26,26 @@
 	<?php wp_body_open(); ?>
 	<div id="page" class="site">
 		<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e('Skip to content', 'wp_guarapo'); ?></a>
+		
+		<div class="header-logo container-fluid pe-5">
+			<div class="container">
+				<ul class="list-container d-flex justify-content-end">
+					<li class="header-list me-4">
+						<img src="<?php echo get_template_directory_uri() . "/src/assets/images/Header/facebook.svg" ?>"
+						alt="logo de facebook" />
+					</li>
+					<li class="header-list me-4 ms-2">
+						<img src="<?php echo get_template_directory_uri() . "/src/assets/images/Header/youtube.svg" ?>"
+					 	alt="logo de youtube">
+					</li>
+					<li class="header-list me-5 ms-2">
+						<img src="<?php echo get_template_directory_uri() . "/src/assets/images/Header/instagram.svg" ?>"
+					 	alt="logo de instagram">
+					</li>
+				</ul>
+			</div>
+		</div>
+		
 		<header class="container site-header">
 			<nav class="navbar navbar-expand-md navbar-light" id="mainNav">
 				<div class="container">
@@ -66,5 +86,6 @@
 				</span>
 				
 				</div>
+				<button class="navbar-button">Donate</button>
 			</nav>
 		</header><!-- #masthead -->
