@@ -130,7 +130,7 @@ $program4 = $program['program_4'];
               <h5 class="card-description"><?php echo esc_html($program3['title']); ?></h5>
             </div>
           </div>
-        </div>
+        </div> 
         <!--Card 4 -->
         <div class="col">
           <div class="program">
@@ -145,9 +145,9 @@ $program4 = $program['program_4'];
       </div>
     </div>
 
-  <div class="d-flex justify-content-center align-items-center">
     <!-- Carousel para dispositivos pequeños -->
     <div class="d-lg-none d-md-none d-sm-block program-container rounded-0">
+      <div class="d-flex justify-content-center align-items-center">
       <div class="carousel-container">
         <!--Card 1 -->
         <div class="col-12">
@@ -190,7 +190,7 @@ $program4 = $program['program_4'];
               <p class="card-title"><?php echo esc_html($program4['description']); ?></p>
               <h5 class="card-description"><?php echo esc_html($program4['title']); ?></h5>
             </div>
-            </div>
+          </div>
           </div>
         </div>
       </div>
@@ -252,8 +252,7 @@ $support3 = $support['support_method_3'];
             </h4>
             <div class="donation-text mb-4 mt-1">
               <?php echo esc_html($support2['description']); ?>
-              <a href="https://bostonstringacademy.org/contact/" target="_blank" class="donation-link">
-              </a>
+              <a href="https://bostonstringacademy.org/contact/" target="_blank" class="donation-link"></a>
             </div>
           </div>
         </div>
@@ -786,7 +785,7 @@ $question_5 = $faqs['question_5'];
       <h2 class="accordion-header" id="headingOne">
         <button class="accordion-button d-flex justify-content-between py-4" type="button" data-bs-toggle="collapse"
           data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-            <p class="w-75">
+            <p class="w-75 question-text">
               <?php echo esc_html($question_1['question']); ?>
             </p>
             <img class="plus-icon mb-4" src="<?php echo esc_url($question_1['plus_image']); ?>" alt="plus icon">
@@ -800,14 +799,13 @@ $question_5 = $faqs['question_5'];
       </div>
     </div>
 
-    
 
     <!--Question 2-->
     <div class="accordion-item question">
       <h2 class="accordion-header" id="headingTwo">
         <button class="accordion-button collapsed d-flex justify-content-between py-4" type="button"
           data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-          <p class="w-75">
+          <p class="w-75 question-text">
             <?php echo esc_html($question_2['question']); ?>
           </p>
           <img class="plus-icon mb-4" src="<?php echo esc_url($question_2['plus_image']); ?>" alt="plus icon">
@@ -821,14 +819,13 @@ $question_5 = $faqs['question_5'];
       </div>
     </div>
 
-    
 
     <!--Question 3-->
     <div class="accordion-item question">
       <h2 class="accordion-header" id="headingThree">
         <button class="accordion-button collapsed d-flex justify-content-between py-4" type="button"
           data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-          <p class="w-75">
+          <p class="w-75 question-text">
             <?php echo esc_html($question_3['question']); ?>
           </p>
           <img class="plus-icon mb-4" src="<?php echo esc_url($question_3['plus_image']); ?>" alt="plus icon">
@@ -842,14 +839,12 @@ $question_5 = $faqs['question_5'];
       </div>
     </div>
 
-    
-
     <!--Question 4-->
     <div class="accordion-item question">
       <h2 class="accordion-header" id="headingTwo">
         <button class="accordion-button collapsed d-flex justify-content-between py-4" type="button"
           data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-          <p class="w-75">
+          <p class="w-75 question-text">
             <?php echo esc_html($question_4['question']); ?>
           </p>
           <img class="plus-icon mb-4" src="<?php echo esc_url($question_4['plus_image']); ?>" alt="plus icon">
@@ -870,7 +865,7 @@ $question_5 = $faqs['question_5'];
       <h2 class="accordion-header" id="headingFive">
         <button class="accordion-button collapsed d-flex justify-content-between py-4" type="button"
           data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-          <p class="w-75">
+          <p class="w-75 question-text">
             <?php echo esc_html($question_5['question']); ?>
           </p>
           <img class="plus-icon mb-4" src="<?php echo esc_url($question_5['plus_image']); ?>" alt="plus icon">
