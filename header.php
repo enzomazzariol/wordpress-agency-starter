@@ -29,7 +29,7 @@
 		
 		<div class="container-fluid bg--gray">
 			<div class="container">
-				<ul class="social-banner-list d-flex justify-content-end align-items-center  py-3">
+				<ul class="social-banner-list d-flex justify-content-end align-items-center py-3">
 					<li class="ms-3">
 						<a href=""><i class="fa-brands fa-facebook-f"></i></a>
 					</li>
