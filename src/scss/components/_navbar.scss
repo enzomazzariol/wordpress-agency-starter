@@ -1,11 +1,29 @@
 // Base styling for the navbar
+// Custom variables
+$navbar-height: 80px;
+
+$text-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
+$text-shadow-2: 0 1px 2px rgba(0, 0, 0, 0.5);
+
+$navbar-color: white;
+$navbar-cta-color: white;
+$navbar-cta-bg-color: $primary;
+$navbar-text-color: $darker-black;
+$navbar-text-color-hover: rgba(200, 200, 200, 0.2);
+$navbar-font-family: $font-family-base;
+
+
+$navbar-togle-collapse: white;
+$navbar-togle-collapse-line: #ddd;
+
+
 #mainNav {
   background-color: $navbar-color;
   min-height: $navbar-height;
 }
 .navbar {
-  padding-top: 1rem;
-  padding-bottom: 0;
+  padding-top: 0rem;
+  padding-bottom: 1rem;
   &-brand {
     font-family: $navbar-font-family;
     color: $navbar-text-color;
@@ -48,15 +66,6 @@
       box-shadow: none;
     }
   }
-
-  &-button {
-    background-color: $orange;
-    border: none;
-    width: 142px;
-    height: 43px;
-    color: #FFFFFF;
-    border-radius: 8px;
-  }
 }
 
 .nav {
@@ -72,12 +81,7 @@
   }
 }
 
-.header {
-  &-logo {
-    background-color: #FBF8F6;
-    height: 40px;
-  }
-
+.social-banner {
   &-list {
     list-style: none;
   }

@@ -27,20 +27,17 @@
 	<div id="page" class="site">
 		<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e('Skip to content', 'wp_guarapo'); ?></a>
 		
-		<div class="header-logo container-fluid pe-5">
+		<div class="container-fluid bg--gray">
 			<div class="container">
-				<ul class="list-container d-flex justify-content-end">
-					<li class="header-list me-4">
-						<img src="<?php echo get_template_directory_uri() . "/src/assets/images/Header/facebook.svg" ?>"
-						alt="logo de facebook" />
+				<ul class="social-banner-list d-flex justify-content-end align-items-center  py-3">
+					<li class="ms-3">
+						<a href=""><i class="fa-brands fa-facebook-f"></i></a>
 					</li>
-					<li class="header-list me-4 ms-2">
-						<img src="<?php echo get_template_directory_uri() . "/src/assets/images/Header/youtube.svg" ?>"
-					 	alt="logo de youtube">
+					<li class="ms-3">
+						<a href=""><i class="fa-brands fa-youtube"></i></a>
 					</li>
-					<li class="header-list me-5 ms-2">
-						<img src="<?php echo get_template_directory_uri() . "/src/assets/images/Header/instagram.svg" ?>"
-					 	alt="logo de instagram">
+					<li class="ms-3">
+						<a href=""><i class="fa-brands fa-instagram"></i></a>
 					</li>
 				</ul>
 			</div>
@@ -74,7 +71,7 @@
 						'theme_location'    => 'menu-1',
 						'depth'             => 2,
 						'container'         => 'div',
-						'container_class'   => 'collapse navbar-collapse justify-content-start',
+						'container_class'   => 'collapse navbar-collapse justify-content-end',
 						'container_id'      => 'navbarScroll',
 						'menu_class'        => 'nav navbar-nav',
 						'fallback_cb'       => 'WP_Bootstrap_Navwalker::fallback',
@@ -86,6 +83,6 @@
 				</span>
 				
 				</div>
-				<button class="navbar-button">Donate</button>
+				
 			</nav>
 		</header><!-- #masthead -->

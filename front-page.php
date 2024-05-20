@@ -148,9 +148,9 @@ $program4 = $program['program_4'];
     <!-- Carousel para dispositivos pequeños -->
     <div class="d-lg-none d-md-none d-sm-block program-container rounded-0">
       <div class="d-flex justify-content-center align-items-center">
-      <div class="carousel-container">
+      <div class="carousel-programs">
         <!--Card 1 -->
-        <div class="col-12">
+        <div class="carousel-programs-slide">
           <div class="program">
             <img class="program-img" src="<?php echo esc_url($program1['image']); ?>" alt="background">
             <div class="program-wrapper program-wrapper-blue d-flex flex-column justify-content-end align-items-start p-4">
@@ -160,7 +160,7 @@ $program4 = $program['program_4'];
           </div>
         </div>
         <!--Card 2 -->
-        <div class="col-12">
+        <div class="carousel-programs-slide">
           <div class="program">
             <img class="program-img" src="<?php echo esc_url($program2['image']); ?>" alt="background">
             <div
@@ -171,7 +171,7 @@ $program4 = $program['program_4'];
           </div>
         </div>
         <!--Card 3 -->
-        <div class="col-12">
+        <div class="carousel-programs-slide">
           <div class="program">
             <img class="program-img" src="<?php echo esc_url($program3['image']); ?>" alt="background">
             <div
@@ -182,7 +182,7 @@ $program4 = $program['program_4'];
           </div>
         </div>
         <!--Card 4 -->
-        <div class="col-12">
+        <div class="carousel-programs-slide">
           <div class="program">
             <img class="program-img" src="<?php echo esc_url($program4['image']); ?>" alt="background">
             <div
@@ -236,7 +236,7 @@ $support3 = $support['support_method_3'];
             </h4>
             <div class="donation-text mb-4 mt-1">
               <?php echo esc_html($support1['description']); ?>
-              <a href="https://bostonstringacademy.org/donate/" target="_blank" class="donation-link">Make
+              <a href="https://bostonstringacademy.org/donate/" target="_blank" class="donation-link">
               </a>
             </div>
           </div>
@@ -647,7 +647,7 @@ $sponsors_images = $sponsors['sponsors_images'];
 ?>
 
 <!-- sponsor -->
-<section class="container-fluid px-0 d-flex">
+<section class="container-fluid px-0">
   <div class="row g-0 justify-content-center">
     <div class="col-12 col-lg-6 bg--blue py-5 d-flex flex-column align-items-center justify-content-center sponsor-left">
         
