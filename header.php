@@ -44,7 +44,7 @@
 		</div>
 		
 		<header class="container site-header">
-			<nav class="navbar navbar-expand-md navbar-light" id="mainNav">
+			<nav class="navbar navbar-expand-lg navbar-light" id="mainNav">
 				<div class="container">
 					<!-- Brand and toggle get grouped for better mobile display -->
 					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
@@ -57,8 +57,7 @@
 						$image = wp_get_attachment_image_src( $custom_logo_id , 'medium' );
 						$description = get_bloginfo('description');
 						?> 
-								<img class="navbar-brand-logo" height="90" width="90" alt="<?php bloginfo('name') ?>" src="<?php echo $image[0] ?>"/> 
-								<!-- <span class="navbar-brand-subtitle"><?php echo $description ?></span> -->
+								<img class="navbar-brand-logo" alt="<?php bloginfo('name') ?>" src="<?php echo $image[0] ?>"/> 
 							
 						<?php
 						} else {

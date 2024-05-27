@@ -1,0 +1,147 @@
+/*CAROUSEL SM */
+
+.carousel-programs {
+  width: 100%;
+  padding-block: 16px 32px;
+  margin: 16px 32px;
+  overflow-x: auto;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  scroll-snap-type: x mandatory;
+  &-slide {
+    flex: 1 0 70%;
+    aspect-ratio: 1;
+    flex-flow: column nowrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    scroll-snap-align: center;
+  }
+}
+
+.carousel-programs::-webkit-scrollbar {
+  height: 14px;
+  width: calc(100% - 48px);
+}
+
+/* Programs */
+
+.program {
+  position: relative;
+  &-bg-img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  &-bg-wrapper {
+    position: relative;
+  }
+  &-card{
+    position: relative;
+    aspect-ratio: 3/5;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 100%;
+    transition: 0.3s;
+    &:hover{
+        transform: scale(1.02);
+        transition: 0.3s;
+    }
+  }
+  &-content {
+    position: relative;
+    &-blue {
+      background: $blue;
+      background: linear-gradient(0deg, #023955 0%, rgba(55, 53, 53, 0) 35%);
+    }
+    &-orange {
+      background: $orange;
+      background: linear-gradient(0deg, #141515 0%, rgba(55, 53, 53, 0) 35%);
+    }
+    &-black {
+      background: var(#141515);
+      background: linear-gradient(0deg, #141515 0%, rgba(55, 53, 53, 0) 35%);
+    }
+    &-green {
+      background: $green;
+      background: linear-gradient(
+        0deg,
+        rgba(100, 185, 79, 0.8) 0%,
+        rgba(55, 53, 53, 0) 35%
+      );
+    }
+  }
+  &-img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.card-description,
+.container-card-title {
+  color: $white;
+  font-family: $font-family-yaldevi;
+}
+
+.card-title,
+.container-card-description {
+  color: $white;
+  font-family: $font-family-notosans;
+}
+
+/* Responsive */
+
+@media screen and (max-width: 576px) {
+  /* SM */
+
+  .program-container-text {
+    margin-bottom: 0.5rem;
+  }
+
+  .carousel-container {
+    width: 60%;
+  }
+
+  .program-wrapper {
+    aspect-ratio: 4/6;
+  }
+
+  .support-image-container {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .donation-text {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  /*MD*/
+
+  .carousel-container {
+    width: 60%;
+  }
+
+  .program-wrapper {
+    aspect-ratio: 4/6;
+  }
+
+  .card-title,
+  .card-description {
+    font-size: 1rem;
+  }
+
+  .support-image {
+    width: 90%;
+  }
+
+  .banner-text {
+    width: 90%;
+  }
+}

@@ -28,11 +28,7 @@
 			the_title( '<h3 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h3>' );
 		 ?>
 		 <div class="entry-meta mb-2 small">
-			<?php
-				wp_guarapo_posted_by();
-				wp_guarapo_posted_on();
-				echo '<span class="reading-time">' . reading_time() . '</span>';
-			?>
+			Director, Violin
 		</div><!-- .entry-meta -->
 		</header><!-- .entry-header -->
 		

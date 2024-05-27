@@ -12,15 +12,11 @@
 <article id="post-<?php the_ID(); ?>">
 	<?php if(!is_front_page()): ?>
 	<header class="container-fluid px-0">
-		<div class="row g-0 bg--gray">
-			<div class="col-6">
-				<div class="container px-5 py-5">
-					<h1 class="mb-4 ff-yaldevi"><?php echo get_the_title(); ?></h1>
-					<p>Lorem ipsum dolor sit amet consectetur. Porttitor est amet sed nisi ac eget facilisi.</p>
-				</div>
+		<div class="row g-0 bg--gray cover-pages">
+			<div class="col col-md-6 cover-pages d-flex align-items-center justify-content-center">
+				<h1 class=""><?php echo get_the_title(); ?></h1>
 			</div>
-
-			<div class="col-6 d-lg-block d-sm-none">
+			<div class="col col-md-6 d-lg-block d-none cover-pages">
 				<img src="<?php echo get_template_directory_uri() . "/src/assets/images/Banner/dudamel.jpg" ?>"
                 alt="comillas" class="img-fluid" />
 			</div>
@@ -28,7 +24,7 @@
 	</header>
 	<?php endif; ?>
 
-	<div class="entry-content">
+	<div class="container entry-content">
 		<?php
 		the_content();
 		?>

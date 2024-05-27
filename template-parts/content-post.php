@@ -10,31 +10,34 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class($class = 'mb-3'); ?>>
+<!--
     <header class="container card-loop">
             <div class="row justify-content-md-center ">
                 <div class="col-md-8">
-                    <h1 class="cover-title text-center"><?php the_title(); ?></h1>
-                    <?php	if ( 'post' === get_post_type() ) :
+                    <h1 class="cover-title text-center"><?php // the_title(); ?></h1>
+                    <?php	// if ( 'post' === get_post_type() ) :
 					?>
                     <div class="entry-meta mb-3 small text-center">
-                        <?php
+                        <?php /*
 							wp_guarapo_posted_on();
 							wp_guarapo_posted_by();
                             echo '<span class="reading-time">' . reading_time() . '</span>';
+                            */
 						?>
-                    </div><!-- .entry-meta -->
-                    <?php endif; ?>
+                    </div> .entry-meta
+                    <?php // endif; ?>
                     <div class="mt-3">
-                        <?php my_share_buttons(); ?>
+                        <?php // my_share_buttons(); ?>
                     </div>
 					<hr class="center">
-                </div>
+              </div>
             </div>
     </header>
+                    -->
 
-    <div class="container entry-content ">
+    <div class="container-fluid entry-content ">
         <div class="row justify-content-md-center">
-            <div class="col-md-8">
+            <div class="col-md-12 px-0">
                 <?php the_content(); ?>
             </div>
 
@@ -64,15 +67,15 @@
                 ?>
             
             <?php endif; ?>
-            <div class="mt-3 text-center">
+          <!--  <div class="mt-3 text-center">
                 <hr class="center">
                 <small> Comparte esta historia</small></br>
-                <?php my_share_buttons(); ?>
+                <?php // my_share_buttons(); ?>
             </div>
             
             <div>
-                <?php create_relatedposts_shortcode() ?>
-            </div>      
+                <?php // create_relatedposts_shortcode() ?>
+            </div>  -->    
         </div><!-- .entry-footer -->
         
 </article>

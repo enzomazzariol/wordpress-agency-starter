@@ -15,6 +15,7 @@ html {
   height: 100%;
   font-size: 1rem;
   line-height: 1.5;
+  color: $text-color;
 }
 
 h1,
@@ -55,7 +56,7 @@ h6 {
 p {
   font-size: 1rem;
   line-height: 1.4;
-  color: var(--TextColorSecond);
+  color: $text-color;
 }
 
 h1 {
@@ -63,8 +64,6 @@ h1 {
   font-size: 40px;
   line-height: 1.2;
   margin-bottom: 0.5rem;
-  font-family: var(--HeaderFontFamily);
-  color: var(--TextColor);
 }
 
 @media (min-width: 479px) {
@@ -83,8 +82,7 @@ h2 {
   font-weight: 700;
   font-size: 2rem;
   line-height: 1.3;
-  font-family: var(--HeaderFontFamily);
-  color: var(--TextColor);
+  
 }
 
 @media (min-width: 768px) {
@@ -98,16 +96,11 @@ h3 {
   font-size: 1.5625rem;
   line-height: 1.4em;
   font-weight: 700;
-  font-family: var(--HeaderFontFamily);
-  color: var(--TextColor);
 }
 
 h5{
   font-size: 1.2rem;
   font-weight: 700;
-  font-family: var(--HeaderFontFamily);
-  color: var(--TextColor);
-
 }
 
 .text-size-large {
