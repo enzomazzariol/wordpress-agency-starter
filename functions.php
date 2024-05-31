@@ -196,10 +196,15 @@ add_action('wp_enqueue_scripts', '_themename_assets');
 /**
  * Register Custom Navigation Walker
  */
+
+// bootstrap 5 wp_nav_menu walker
+
 function register_navwalker(){
 	require_once get_template_directory() . '/inc/class-wp-bootstrap-navwalker.php';
 }
 add_action( 'after_setup_theme', 'register_navwalker' );
+// register a new menu
+register_nav_menu('main-menu', 'Main menu');
 
 /**
  * Remove navbar

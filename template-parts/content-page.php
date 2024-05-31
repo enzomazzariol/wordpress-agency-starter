@@ -10,29 +10,34 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>">
-	<?php if(!is_front_page()): ?>
-	<header class="container-fluid px-0">
-		<div class="row g-0 bg--gray cover-pages">
-			<div class="col col-md-6 cover-pages d-flex align-items-center justify-content-center">
-				<h1 class=""><?php echo get_the_title(); ?></h1>
-			</div>
-			<div class="col col-md-6 d-lg-block d-none cover-pages">
-				<img src="<?php echo get_template_directory_uri() . "/src/assets/images/Banner/dudamel.jpg" ?>"
-                alt="comillas" class="img-fluid" />
-			</div>
-		</div>
-	</header>
-	<?php endif; ?>
+    <?php if(!is_front_page()): ?>
+    <header class="container-fluid px-0">
+        <div class="row g-0 bg--gray cover-pages">
+            <div class="col col-md-6 cover-pages d-flex align-items-center justify-content-center">
+                <h1 class="mx-5"><?php echo get_the_title(); ?></h1>
+            </div>
+            <div class="col col-md-6 d-lg-block d-none cover-pages">
+                <?php
+				 if (has_post_thumbnail()) {
+					the_post_thumbnail('medium', array( 'class' => 'img-fluid' ) );
+				}
+				else { ?>
+                <img class="img-fluid" src="<?php echo catch_that_image(); ?>" alt="feature default" />
+                <?php } ?>
+            </div>
+        </div>
+    </header>
+    <?php endif; ?>
 
-	<div class="container entry-content">
-		<?php
+    <div class="container entry-content mt-5">
+        <?php
 		the_content();
 		?>
-	</div><!-- .entry-content -->
+    </div><!-- .entry-content -->
 
-	<?php if ( get_edit_post_link() ) : ?>
-		<footer class="entry-footer">
-			<?php
+    <?php if ( get_edit_post_link() ) : ?>
+    <footer class="entry-footer">
+        <?php
 			edit_post_link(
 				sprintf(
 					wp_kses(
@@ -50,6 +55,6 @@
 				'</span>'
 			);
 			?>
-		</footer><!-- .entry-footer -->
-	<?php endif; ?>
+    </footer><!-- .entry-footer -->
+    <?php endif; ?>
 </article><!-- #post-<?php the_ID(); ?> -->

@@ -61,6 +61,13 @@ $navbar-togle-collapse-line: #ddd;
       box-shadow: none;
     }
   }
+  .dropdown-menu {
+    background-color: $gray-100;
+    li{
+      font-size: 0.9rem;
+      padding-bottom: 5px;
+    }
+  }
 }
 
 .nav {
@@ -68,6 +75,7 @@ $navbar-togle-collapse-line: #ddd;
     font-family: $navbar-font-family;
     color: $navbar-text-color !important;
     margin-left: 1.2rem;
+    padding: 10px;
     &:hover {
       color: $navbar-text-color-hover !important;
       transition: 0.2s;

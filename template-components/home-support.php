@@ -8,7 +8,7 @@ $support3 = $support['support_method_3'];
 ?>
 <section class="container px-0 mt-5">
   <div class="row g-0 align-items-center">
-    <div class="col-sm-12 col-md-12 col-lg d-flex align-items-center justify-content-center support-image-container">
+    <div class="col-sm-12 col-md-12 col-lg d-flex align-items-center justify-content-center support-image-container p-3">
       <img src="<?php echo esc_url($support['image']); ?>" alt="jovenes festejando" class="img-fluid support-image">
     </div>
 
