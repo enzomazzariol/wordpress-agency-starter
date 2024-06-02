@@ -64,7 +64,7 @@ $support3 = $support['support_method_3'];
         </div>
 
         <div class="mb-5">
-          <a class="button button--third">
+          <a class="button button--third" href=" <?php echo esc_html($support['button_url']); ?>" target="_blank">
             <?php echo esc_html($support['button_name']); ?>
           </a>
         </div>

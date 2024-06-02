@@ -12,23 +12,48 @@
   }
 }
 
-.button--primary, .button--primary:hover{
+.button--primary{
   border: 1px solid $primary;
   background-color: $primary;
   color: #ffffff;
-}
-
-.button--second, .button--second:hover{
+  &:hover{
+    border: 1px solid darken($color: $primary, $amount: 10);
+    background-color: darken($color: $primary, $amount: 10);
+  }
+} 
+.button--second{
   border: 1px solid $blue;
   background-color: $blue;
   color: #ffffff;
+  &:hover{
+    border: 1px solid darken($color: $blue, $amount: 10);
+    background-color: darken($color: $blue, $amount: 10);
+  }
 }
 
-.button--third, .button--third:hover{
+.button--third{
   border: 1px solid $green;
   background-color: $green;
   color: #ffffff;
-  font-family: $font-family-notosans;
-  font-weight: 900;
-  padding: 0.8rem 2rem;
+  &:hover{
+    border: 1px solid darken($color: $green, $amount: 10);
+    background-color: darken($color: $green, $amount: 10);
+  }
+}
+
+.wp-element-button{
+  padding: 0.8rem 1.3rem;
+  font-size: 0.9rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 8px;
+  font-family: $font-family-yaldevi;
+  border: 1px solid $primary;
+  background-color: $primary;
+  color: #ffffff;
+  &:hover{
+    border: 1px solid darken($color: $primary, $amount: 10);
+    background-color: darken($color: $primary, $amount: 10);
+  }
 }

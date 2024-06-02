@@ -18,10 +18,13 @@ get_header();
 <?php if (has_post_thumbnail( $post->ID ) ): ?>
 
     <header class="container-fluid px-0 teachers-banner">
-                <?php 
-                $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' ); 
-                
-                echo '<img class="teachers-img" src="'. $image[0] .'" alt="'. get_the_title() .'" />' ;?>
+    <?php
+				 if (has_post_thumbnail()) {
+					the_post_thumbnail('full', array( 'class' => 'cover-img' ) );
+				    }
+				else { ?>
+                <img class="teachers-img" src="<?php echo catch_that_image(); ?>" alt="feature default" />
+                <?php } ?>
 	</header>
 
     <div class="container-fluid px-0 py-5 bg--gray">

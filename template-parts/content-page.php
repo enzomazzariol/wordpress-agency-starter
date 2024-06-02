@@ -19,10 +19,10 @@
             <div class="col col-md-6 d-lg-block d-none cover-pages">
                 <?php
 				 if (has_post_thumbnail()) {
-					the_post_thumbnail('medium', array( 'class' => 'img-fluid' ) );
+					the_post_thumbnail('full', array( 'class' => 'cover-img' ) );
 				}
 				else { ?>
-                <img class="img-fluid" src="<?php echo catch_that_image(); ?>" alt="feature default" />
+                <img class="cover-img" src="<?php echo catch_that_image(); ?>" alt="feature default" />
                 <?php } ?>
             </div>
         </div>

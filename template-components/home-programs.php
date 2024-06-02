@@ -26,45 +26,53 @@ $program4 = $program['program_4'];
         <!--Card 1 -->
         <div class="col">
           <div class="program-card">
-            <img class="program-img" src="<?php echo esc_url($program1['image']); ?>" alt="background">
+            <a href="<?php echo esc_url($program1['program_url']); ?>">
+              <img class="program-img" src="<?php echo esc_url($program1['image']); ?>" alt="background">
             <div
               class="program-card program-content-blue d-flex flex-column justify-content-end align-items-start p-4">
               <p class="card-title"><?php echo esc_html($program1['description']); ?></p>
               <h5 class="card-description"><?php echo esc_html($program1['title']); ?></h5>
             </div>
+            </a>
           </div>
         </div>
         <!--Card 2 -->
         <div class="col">
           <div class="program-card">
+          <a href="<?php echo esc_url($program2['program_url']); ?>">
             <img class="program-img" src="<?php echo esc_url($program2['image']); ?>" alt="background">
             <div
               class="program-card program-content-black d-flex flex-column justify-content-end align-items-start p-4">
               <p class="card-title"><?php echo esc_html($program2['description']); ?></p>
               <h5 class="card-description"><?php echo esc_html($program2['title']); ?></h5>
             </div>
+            </a>
           </div>
         </div>
         <!--Card 3 -->
         <div class="col">
           <div class="program-card">
+          <a href="<?php echo esc_url($program3['program_url']); ?>">
             <img class="program-img" src="<?php echo esc_url($program3['image']); ?>" alt="background">
             <div
               class="program-card program-content-green d-flex flex-column justify-content-end align-items-start p-4">
               <p class="card-title"><?php echo esc_html($program3['description']); ?></p>
               <h5 class="card-description"><?php echo esc_html($program3['title']); ?></h5>
             </div>
+            </a>
           </div>
         </div> 
         <!--Card 4 -->
         <div class="col">
           <div class="program-card">
+          <a href="<?php echo esc_url($program4['program_url']); ?>">
             <img class="program-img" src="<?php echo esc_url($program4['image']); ?>" alt="background">
             <div
               class="program-card program-content-black d-flex flex-column justify-content-end align-items-start p-4">
               <p class="card-title"><?php echo esc_html($program4['description']); ?></p>
               <h5 class="card-description"><?php echo esc_html($program4['title']); ?></h5>
             </div>
+            </a>
           </div>
         </div>
       </div>
@@ -77,44 +85,55 @@ $program4 = $program['program_4'];
         <!--Card 1 -->
         <div class="carousel-programs-slide">
           <div class="program-card">
+          <a href="<?php echo esc_url($program1['program_url']); ?>">
             <img class="program-img" src="<?php echo esc_url($program1['image']); ?>" alt="background">
             <div class="program-card program-content-blue d-flex flex-column justify-content-end align-items-start p-4">
               <p class="card-title"><?php echo esc_html($program1['description']); ?></p>
               <h5 class="card-description"><?php echo esc_html($program1['title']); ?></h5>
             </div>
+            </a>
           </div>
         </div>
         <!--Card 2 -->
         <div class="carousel-programs-slide">
           <div class="program-card">
+          <a href="<?php echo esc_url($program1['program_url']); ?>">
+
             <img class="program-img" src="<?php echo esc_url($program2['image']); ?>" alt="background">
             <div
               class="program-card program-content-black d-flex flex-column justify-content-end align-items-start p-4">
               <p class="card-title"><?php echo esc_html($program2['description']); ?></p>
               <h5 class="card-description"><?php echo esc_html($program2['title']); ?></h5>
             </div>
+            </a>
           </div>
         </div>
         <!--Card 3 -->
         <div class="carousel-programs-slide">
           <div class="program-card">
+          <a href="<?php echo esc_url($program1['program_url']); ?>">
+
             <img class="program-img" src="<?php echo esc_url($program3['image']); ?>" alt="background">
             <div
               class="program-card program-content-green d-flex flex-column justify-content-end align-items-start p-4">
               <p class="card-title"><?php echo esc_html($program3['description']); ?></p>
               <h5 class="card-description"><?php echo esc_html($program3['title']); ?></h5>
             </div>
+            </a>
           </div>
         </div>
         <!--Card 4 -->
         <div class="carousel-programs-slide">
           <div class="program-card">
+          <a href="<?php echo esc_url($program1['program_url']); ?>">
+
             <img class="program-img" src="<?php echo esc_url($program4['image']); ?>" alt="background">
             <div
               class="program-card program-content-black d-flex flex-column justify-content-end align-items-start p-4">
               <p class="card-title"><?php echo esc_html($program4['description']); ?></p>
               <h5 class="card-description"><?php echo esc_html($program4['title']); ?></h5>
             </div>
+            </a>
           </div>
           </div>
         </div>

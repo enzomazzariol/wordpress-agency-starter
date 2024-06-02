@@ -5,7 +5,7 @@
 /**
  * Set up a decent box model on the root element
  */
- html {
+html {
   box-sizing: border-box;
 }
 * {
@@ -27,25 +27,30 @@
 /**
  * Basic styles for links
  */
- a {
+a {
   color: inherit;
   text-decoration: none;
-  &:hover{
-    text-decoration: none!important;
+  &:hover {
+    text-decoration: none !important;
+  }
 }
+.site-main {
+  li {
+    margin-bottom: 1rem;
+  }
 }
 
-hr.center{
+hr.center {
   margin-left: auto;
   margin-right: auto;
 }
 
-hr{
+hr {
   color: $light-gray;
   width: 100%;
 }
 
-.ml-2{
+.ml-2 {
   margin-left: 2rem;
 }
 
@@ -53,7 +58,7 @@ hr{
   background-color: $background-gray;
 }
 
-.bg--orange{
+.bg--orange {
   background-color: $orange;
 }
 
