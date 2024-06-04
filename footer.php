@@ -14,11 +14,14 @@
 <section class="footer mt-5 py-5">
 	<div class="container">
 		<div class="row">
-			<div class="col-sm-12 col-md-8 py-4">
+			<div class="col-sm-12 col-md-4">
 				<?php dynamic_sidebar('footer_area_one'); ?>
 			</div>
 			<div class="col-sm-12 col-md-4">
 				<?php dynamic_sidebar('footer_area_two'); ?>
+			</div>
+			<div class="col-sm-12 col-md-4">
+				<?php dynamic_sidebar('footer_area_three'); ?>
 			</div>
 			<div class="footer col-sm-12">
 				Copyright &copy; <?php echo date("Y"); ?> - <a href="https://guarapomedia.com" target="_blank" rel="noopener noreferrer"><img class="icon" src="<?php echo get_template_directory_uri(); ?>/dist/assets/images/guarapo_logo.svg"  alt="Guarapo Media" /></a>

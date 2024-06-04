@@ -22,7 +22,7 @@ $questions = [
             <p class="w-75 question-text">
               <?php echo esc_html($question['question']); ?>
             </p>
-            <img class="plus-icon mb-4" src="<?php echo get_template_directory_uri() . "/src/assets/images/faqs/plus.png"; ?>" alt="plus icon">
+            <img class="plus-icon mb-4" src="<?php echo get_template_directory_uri() . "/dist/assets/images/faqs/plus.svg"; ?>" alt="plus icon">
           </button>
         </h2>
         <div id="collapse<?php echo $index; ?>" class="accordion-collapse collapse <?php echo $index === 0 ? 'show' : ''; ?>" aria-labelledby="heading<?php echo $index; ?>" data-bs-parent="#accordionExample">

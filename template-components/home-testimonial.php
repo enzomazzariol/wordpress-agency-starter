@@ -37,11 +37,11 @@ $testimonials = [
                   <div class="col">
                     <div class="testimonial-box text-center mb-4">
                       <div class="d-flex justify-content-start p-3">
-                        <img src="<?php echo get_template_directory_uri() . "/src/assets/images/testimonial/quotes.svg"; ?>" alt="quotes" class="me-1" />
+                        <img src="<?php echo get_template_directory_uri() . "/dist/assets/images/testimonial/quotes.svg"; ?>" alt="quotes" class="me-1" />
                       </div>
                       <p><?php echo esc_html($current_testimonial['opinion']); ?></p>
                       <div class="d-flex justify-content-end p-2 me-3">
-                        <img src="<?php echo get_template_directory_uri() . "/src/assets/images/testimonial/quotes.svg"; ?>" alt="quotes" class="me-1 invert-quotes" />
+                        <img src="<?php echo get_template_directory_uri() . "/dist/assets/images/testimonial/quotes.svg"; ?>" alt="quotes" class="me-1 invert-quotes" />
                       </div>
                     </div>
                     <h5 class="mt-auto"><?php echo esc_html($current_testimonial['name']); ?></h5>
@@ -71,11 +71,11 @@ $testimonials = [
               <div class="col-12">
                 <div class="testimonial-box text-center mb-4">
                   <div class="d-flex justify-content-start p-3">
-                    <img src="<?php echo get_template_directory_uri() . "/src/assets/images/testimonial/quotes.svg"; ?>" alt="quotes" class="me-1" />
+                    <img src="<?php echo get_template_directory_uri() . "/dist/assets/images/testimonial/quotes.svg"; ?>" alt="quotes" class="me-1" />
                   </div>
                   <p><?php echo esc_html($testimonials[$i]['opinion']); ?></p>
                   <div class="d-flex justify-content-end p-2 me-3">
-                    <img src="<?php echo get_template_directory_uri() . "/src/assets/images/testimonial/quotes.svg"; ?>" alt="quotes" class="me-1 invert-quotes" />
+                    <img src="<?php echo get_template_directory_uri() . "/dist/assets/images/testimonial/quotes.svg"; ?>" alt="quotes" class="me-1 invert-quotes" />
                   </div>
                 </div>
                 <h5 class="text-center"><?php echo esc_html($testimonials[$i]['name']); ?></h5>
