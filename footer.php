@@ -14,13 +14,13 @@
 <section class="footer mt-5 py-5">
 	<div class="container">
 		<div class="row">
-			<div class="col-sm-12 col-md-4">
+			<div class="col-sm-12 col-md-4 mb-3">
 				<?php dynamic_sidebar('footer_area_one'); ?>
 			</div>
-			<div class="col-sm-12 col-md-4">
+			<div class="col-sm-12 col-md-4 mb-3">
 				<?php dynamic_sidebar('footer_area_two'); ?>
 			</div>
-			<div class="col-sm-12 col-md-4">
+			<div class="col-sm-12 col-md-4 mb-3">
 				<?php dynamic_sidebar('footer_area_three'); ?>
 			</div>
 			<div class="footer col-sm-12">

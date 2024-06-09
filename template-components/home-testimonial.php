@@ -35,7 +35,7 @@ $testimonials = [
               <?php for ($j = 0; $j < 2; $j++) : ?>
                 <?php if (isset($testimonials[$i + $j])) : $current_testimonial = $testimonials[$i + $j]; ?>
                   <div class="col">
-                    <div class="testimonial-box text-center mb-4">
+                    <div class="testimonial-box text-center mb-5">
                       <div class="d-flex justify-content-start p-3">
                         <img src="<?php echo get_template_directory_uri() . "/dist/assets/images/testimonial/quotes.svg"; ?>" alt="quotes" class="me-1" />
                       </div>
@@ -44,8 +44,8 @@ $testimonials = [
                         <img src="<?php echo get_template_directory_uri() . "/dist/assets/images/testimonial/quotes.svg"; ?>" alt="quotes" class="me-1 invert-quotes" />
                       </div>
                     </div>
-                    <h5 class="mt-auto"><?php echo esc_html($current_testimonial['name']); ?></h5>
-                    <p class="mt-2"><?php echo esc_html($current_testimonial['profession']); ?></p>
+                    <h5 class="text-center"><?php echo esc_html($current_testimonial['name']); ?></h5>
+                    <p class="mt-2 text-center"><?php echo esc_html($current_testimonial['profession']); ?></p>
                   </div>
                 <?php endif; ?>
               <?php endfor; ?>
@@ -79,7 +79,7 @@ $testimonials = [
                   </div>
                 </div>
                 <h5 class="text-center"><?php echo esc_html($testimonials[$i]['name']); ?></h5>
-                  <p class="mt-2 text-center"><?php echo esc_html($testimonials[$i]['profession']); ?></p>
+                <p class="mt-2 text-center"><?php echo esc_html($testimonials[$i]['profession']); ?></p>
               </div>
             </div>
           </div>
