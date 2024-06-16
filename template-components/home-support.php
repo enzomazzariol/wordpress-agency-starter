@@ -12,16 +12,16 @@ $support3 = $support['support_method_3'];
       <img src="<?php echo esc_url($support['image']); ?>" alt="jovenes festejando" class="img-fluid support-image">
     </div>
 
-    <div class="col-sm-12 col-md-12 col-lg d-flex flex-column">
+    <div class="col-sm-12 col-md-12 col-lg d-flex flex-column"  >
       <div class="p-3 ms-4">
-        <h2 class="mb-4 support-title">
+        <h2 class="mb-4 support-title" data-aos="fade-up">
           <?php echo esc_html($support['title']); ?>
         </h2>
-        <p class="mb-5 support-description">
+        <p class="mb-5 support-description" data-aos="fade-up">
           <?php echo esc_html($support['description']); ?>
         </p>
 
-        <div class="donation-info d-flex">
+        <div class="donation-info d-flex" data-aos="fade-up">
           <div class="support-logo me-5">
             <img src="<?php echo esc_url($support1['icon']); ?>" alt="Union 1">
           </div>
@@ -35,7 +35,7 @@ $support3 = $support['support_method_3'];
           </div>
         </div>
 
-        <div class="donation-info d-flex">
+        <div class="donation-info d-flex" data-aos="fade-up">
           <div class="support-logo me-5">
             <img src="<?php echo esc_url($support2['icon']); ?>" alt="Union 2">
           </div>
@@ -49,7 +49,7 @@ $support3 = $support['support_method_3'];
           </div>
         </div>
 
-        <div class="donation-info d-flex">
+        <div class="donation-info d-flex" data-aos="fade-up">
           <div class="support-logo me-5">
             <img src="<?php echo esc_url($support3['icon']); ?>" alt="Union 3">
           </div>
@@ -63,7 +63,7 @@ $support3 = $support['support_method_3'];
           </div>
         </div>
 
-        <div class="mb-5">
+        <div class="mb-5" data-aos="fade-up">
           <a class="button button--third" href=" <?php echo esc_html($support['button_url']); ?>" target="_blank">
             <?php echo esc_html($support['button_name']); ?>
           </a>

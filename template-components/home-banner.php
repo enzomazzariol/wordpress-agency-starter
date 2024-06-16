@@ -9,10 +9,10 @@ $banner = get_field('banner');
     <img class="banner-img" src="<?php echo esc_url($banner['banner_image']); ?>" alt="background">
     <div class="banner-overlay"></div>
     <div class="banner-wrapper d-flex flex-column justify-content-center align-items-center">
-      <p class="banner-title">
+      <p class="banner-title"  data-aos="fade-up">
         <?php echo esc_html($banner['title']); ?>
       </p>
-      <hp class="banner-text w-75">
+      <hp class="banner-text w-75"  data-aos="fade-up">
         <?php echo esc_html($banner['phrase']); ?>
         </p>
     </div>

@@ -13,6 +13,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+    max-height: 600px;
   }
 
   &-img{
@@ -21,11 +22,13 @@
     &--left{
       max-width: 50%;
       object-fit: cover;
+      max-height: 600px;
     }
 
     &--right{
       aspect-ratio: 1/1;
       object-fit: cover;
+      max-height: 48%;
     }
   }
 }

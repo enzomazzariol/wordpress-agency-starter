@@ -13,7 +13,7 @@
     <?php if(!is_front_page()): ?>
     <header class="container-fluid px-0">
         <div class="row g-0 bg--gray cover-pages">
-            <div class="col col-md-6 cover-pages d-flex align-items-center justify-content-center">
+            <div class="col col-md-6 cover-pages d-flex align-items-center justify-content-center"  data-aos="fade-up">
                 <h1 class="mx-5"><?php echo get_the_title(); ?></h1>
             </div>
             <div class="col col-md-6 d-lg-block d-none cover-pages">

@@ -33,13 +33,19 @@ export const reload = done => {
 
 export const styles = () => {
   return src('src/scss/bundle.scss')
-  .pipe(gulpif(!PRODUCTION, sourcemaps.init()))
+  .pipe(sourcemaps.init())
   .pipe(sass().on('error', sass.logError))
-  .pipe(gulpif(PRODUCTION, postcss([ autoprefixer ])))
-  .pipe(gulpif(PRODUCTION, cleanCss({compatibility:'ie8'})))
-  .pipe(gulpif(!PRODUCTION, sourcemaps.write()))
+  .pipe(sourcemaps.write())
   .pipe(dest('dist/css'))
   .pipe(browserSync.stream());
+}
+
+export const stylesProd = () => {
+  return src('src/scss/bundle.scss')
+  .pipe(sass().on('error', sass.logError))
+  .pipe(postcss([ autoprefixer ]))
+  .pipe(cleanCss({compatibility:'ie8'}))
+  .pipe(dest('dist/css'))
 }
 
 export const watchForChanges = () => {
@@ -103,5 +109,5 @@ export const compress = () => {
   };
 
 export const dev = series(clean, parallel(styles, images, copy, scripts), serve, watchForChanges);
-export const build = series(clean, parallel(styles, images, copy, scripts), pot, compress);
+export const build = series(clean, parallel(stylesProd, images, copy, scripts), pot, compress);
 export default dev;

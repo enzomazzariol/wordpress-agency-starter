@@ -28,7 +28,7 @@
 			the_title( '<h3 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h3>' );
 		 ?>
 		 <div class="entry-meta mb-2 small">
-			Director, Violin
+			 <?php echo esc_html( get_field('position') ); ?>
 		</div><!-- .entry-meta -->
 		</header><!-- .entry-header -->
 		

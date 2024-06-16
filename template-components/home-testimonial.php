@@ -14,7 +14,7 @@ $testimonials = [
 <section class="container-fluid px-0 testimonial">
   <div class="row g-0">
     <div class="col-12">
-      <h2 class="text-center testimonial-title col-12 my-5">
+      <h2 class="text-center testimonial-title col-12 my-5" data-aos="fade-up">
         <?php echo esc_html($testimonial['title']); ?>
       </h2>
     </div>
@@ -35,7 +35,7 @@ $testimonials = [
               <?php for ($j = 0; $j < 2; $j++) : ?>
                 <?php if (isset($testimonials[$i + $j])) : $current_testimonial = $testimonials[$i + $j]; ?>
                   <div class="col">
-                    <div class="testimonial-box text-center mb-5">
+                    <div class="testimonial-box text-center mb-5" data-aos="fade-up">
                       <div class="d-flex justify-content-start p-3">
                         <img src="<?php echo get_template_directory_uri() . "/dist/assets/images/testimonial/quotes.svg"; ?>" alt="quotes" class="me-1" />
                       </div>
@@ -44,8 +44,8 @@ $testimonials = [
                         <img src="<?php echo get_template_directory_uri() . "/dist/assets/images/testimonial/quotes.svg"; ?>" alt="quotes" class="me-1 invert-quotes" />
                       </div>
                     </div>
-                    <h5 class="text-center"><?php echo esc_html($current_testimonial['name']); ?></h5>
-                    <p class="mt-2 text-center"><?php echo esc_html($current_testimonial['profession']); ?></p>
+                    <h5 class="text-center" data-aos="fade-up"><?php echo esc_html($current_testimonial['name']); ?></h5>
+                    <p class="mt-2 text-center" data-aos="fade-up"><?php echo esc_html($current_testimonial['profession']); ?></p>
                   </div>
                 <?php endif; ?>
               <?php endfor; ?>

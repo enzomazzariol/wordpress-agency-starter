@@ -284,9 +284,10 @@ margin-top: 3rem;
 .question {
   border: none;
   border-bottom: 1px solid $gray-200;
-}
 
-.question-text {
+  &-text{
+    font-size: 1.2rem;
+  }
 }
 
 .plus-icon {

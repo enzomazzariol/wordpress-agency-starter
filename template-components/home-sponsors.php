@@ -11,10 +11,10 @@ $sponsors_images = $sponsors['sponsors_images'];
     <div class="row g-0 justify-content-center">
         <div class="col-12 col-lg-6 bg--blue d-flex flex-column align-items-center justify-content-center sponsor-left">
 
-            <h3 class="mb-3 sponsor-title">
+            <h3 class="mb-3 sponsor-title"  data-aos="fade-up">
                 <?php echo esc_html($sponsors['partners_title']); ?>
             </h3>
-            <p class="text-center mb-5 w-75 sponsor-description">
+            <p class="text-center mb-5 w-75 sponsor-description"  data-aos="fade-up">
                 <?php echo esc_html($sponsors['partners_description']); ?>
             </p>
             <div class="container sponsor-background bg-white p-3">
@@ -23,7 +23,7 @@ $sponsors_images = $sponsors['sponsors_images'];
                     data-bs-interval="6000">
                     <div class="carousel-inner">
                         <!--slider 1-->
-                        <div class="carousel-item active">
+                        <div class="carousel-item active"  data-aos="fade-up">
                             <div class="d-flex justify-content-between align-items-center">
                                 <img src="<?php echo esc_url($partners_images['left_image']); ?>" alt="Partners of BSA"
                                     class="sponsor-img">
@@ -48,10 +48,10 @@ $sponsors_images = $sponsors['sponsors_images'];
 
         <div
             class="col-12 col-lg-6 bg--green d-flex flex-column align-items-center justify-content-center sponsor-right">
-            <h3 class="mb-3 sponsor-title">
+            <h3 class="mb-3 sponsor-title"  data-aos="fade-up">
                 <?php echo esc_html($sponsors['sponsors_title']); ?>
             </h3>
-            <p class="text-center mb-5 w-75 sponsor-description">
+            <p class="text-center mb-5 w-75 sponsor-description"  data-aos="fade-up">
                 <?php echo esc_html($sponsors['sponsors_description']); ?>
             </p>
             <div class="container bg-white p-3 sponsor-background">
@@ -61,7 +61,7 @@ $sponsors_images = $sponsors['sponsors_images'];
                     <div class="carousel-inner d-flex">
 
                         <!--slider 1-->
-                        <div class="carousel-item active">
+                        <div class="carousel-item active"  data-aos="fade-up">
                             <div class="d-flex justify-content-between align-items-center">
                                 <img src="<?php echo esc_url($sponsors_images['left_image']); ?>" alt="Partners of BSA"
                                     class="sponsor-img">
