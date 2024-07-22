@@ -27,6 +27,9 @@ get_header();
 <!--Support-->
 <?php get_template_part( 'template-components/home', 'support' ); ?>
 
+<!--Support-->
+<?php get_template_part( 'template-components/home', 'culture-program' ); ?>
+
 <!--Testimonial-->
 <?php get_template_part( 'template-components/home', 'testimonial' ); ?>
 

@@ -23,7 +23,7 @@ $support3 = $support['support_method_3'];
 
         <div class="donation-info d-flex" data-aos="fade-up">
           <div class="support-logo me-5">
-            <img src="<?php echo esc_url($support1['icon']); ?>" alt="Union 1">
+            <img src="<?php echo get_template_directory_uri() . "/dist/assets/images/support/letter-1.svg";  ?>" alt="Union 1">
           </div>
           <div class="w-100">
             <h4 class="text-size-large">
@@ -37,7 +37,7 @@ $support3 = $support['support_method_3'];
 
         <div class="donation-info d-flex" data-aos="fade-up">
           <div class="support-logo me-5">
-            <img src="<?php echo esc_url($support2['icon']); ?>" alt="Union 2">
+            <img src="<?php echo get_template_directory_uri() . "/dist/assets/images/support/letter-2.svg"; ?>" alt="Union 2">
           </div>
           <div class="w-100">
             <h4 class="text-size-large">
@@ -51,7 +51,7 @@ $support3 = $support['support_method_3'];
 
         <div class="donation-info d-flex" data-aos="fade-up">
           <div class="support-logo me-5">
-            <img src="<?php echo esc_url($support3['icon']); ?>" alt="Union 3">
+            <img src="<?php echo get_template_directory_uri() . "/dist/assets/images/support/letter-3.svg"; ?>" alt="Union 3">
           </div>
           <div class="w-100">
             <h4 class="text-size-large">

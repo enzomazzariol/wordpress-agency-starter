@@ -203,17 +203,6 @@ margin-top: 3rem;
 
 /* Sponsors */
 .sponsor {
-  &-left {
-    background-color: $blue;
-    padding: 3rem 0 5rem;
-  }
-
-  &-right {
-    background-color: $green;
-    padding: 3rem 0 5rem;
-
-  }
-
   &-background {
     width: 80%;
     border-radius: 5px;
@@ -238,7 +227,9 @@ margin-top: 3rem;
     margin-left: 13px;
   }
   &-img{
-    max-width: 100px;
+    width: 100px;
+    max-height: 50px;
+    object-fit: contain;
   }
 }
 
