@@ -55,5 +55,6 @@
   &:hover{
     border: 1px solid darken($color: $primary, $amount: 10);
     background-color: darken($color: $primary, $amount: 10);
+    color: #ffffff;
   }
 }

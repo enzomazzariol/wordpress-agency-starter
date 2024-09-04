@@ -31,14 +31,14 @@
         <div class="container-fluid bg--gray">
             <div class="container">
                 <ul class="social-banner-list d-flex justify-content-end align-items-center py-3 me-3">
-                    <li class="ms-3">
-                        <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                <li class="ms-3">
+                        <a href="https://www.facebook.com/pg/Boston-String-Academy-382573788481787/about/"><i class="fa-brands fa-facebook-f"></i></a>
                     </li>
                     <li class="ms-3">
-                        <a href=""><i class="fa-brands fa-youtube"></i></a>
+                        <a href="https://www.youtube.com/channel/UC4fNfTbJ-6EGFP9YrV2uzyA"><i class="fa-brands fa-youtube"></i></a>
                     </li>
                     <li class="ms-3">
-                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://instagram.com/bostonstringacademy"><i class="fa-brands fa-instagram"></i></a>
                     </li>
                 </ul>
             </div>

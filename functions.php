@@ -384,10 +384,6 @@ function tthq_add_custom_fa_css()
     $accent_color = get_theme_mod( 'accent_color', '' );
     if ( ! empty( $accent_color ) ) {
       ?>
-	  	a:hover{
-			color: <?php echo $accent_color; ?>;
-			text-decoration: underline;
-		}
 		.bg-primary{
 			background-color: <?php echo $accent_color; ?>!important;
 		}
