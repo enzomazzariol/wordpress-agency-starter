@@ -33,9 +33,6 @@ get_header();
 <!--Testimonial-->
 <?php get_template_part( 'template-components/home', 'testimonial' ); ?>
 
-<!--Banner-->
-<?php get_template_part( 'template-components/home', 'banner' ); ?>
-
 <!--Sponsors-->
 <?php get_template_part( 'template-components/home', 'sponsors' ); ?>
 

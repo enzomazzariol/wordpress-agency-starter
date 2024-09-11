@@ -9,7 +9,7 @@
 
 ?>
 
-<article class="col-md-4 mb-5" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+<article class="col-md-3 mb-5" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<div class="card-loop">
 
 		<div class="box-loop">

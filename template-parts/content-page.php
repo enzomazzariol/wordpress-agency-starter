@@ -12,18 +12,18 @@
 <article id="post-<?php the_ID(); ?>">
     <?php if(!is_front_page()): ?>
     <header class="container-fluid px-0">
-        <div class="row g-0 bg--gray cover-pages">
-            <div class="col col-md-6 cover-pages d-flex align-items-center justify-content-center"  data-aos="fade-up">
+        <div class="row g-0 bg--gray">
+            <div class="col-12 col-md-6 cover-pages d-flex align-items-center justify-content-center cover-pages-title order-2 order-md-1"  data-aos="fade-up">
                 <h1 class="mx-5"><?php echo get_the_title(); ?></h1>
             </div>
-            <div class="col col-md-6 d-lg-block d-none cover-pages">
+            <div class="col-12 col-md-6 cover-pages-img order-1 order-md-2">
                 <?php
-				 if (has_post_thumbnail()) {
-					the_post_thumbnail('full', array( 'class' => 'cover-img' ) );
-				}
-				else { ?>
-                <img class="cover-img" src="<?php echo catch_that_image(); ?>" alt="feature default" />
-                <?php } ?>
+					if (has_post_thumbnail()) {
+						the_post_thumbnail('full', array( 'class' => 'cover-img' ) );
+					}
+					else { ?>
+						<img class="cover-img" src="<?php echo catch_that_image(); ?>" alt="feature default" />
+				<?php } ?>
             </div>
         </div>
     </header>

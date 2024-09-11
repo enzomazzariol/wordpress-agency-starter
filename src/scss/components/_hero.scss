@@ -35,9 +35,18 @@
   }
 }
 
-.cover-pages {
-  height: 250px;
-  overflow: hidden;
+.cover-pages-title {
+  @media (min-width: 768px) {
+    height: 250px;
+  }
+  height: 150px;
+}
+
+.cover-pages-img {
+  @media (min-width: 768px) {
+    max-height: 250px;
+  }
+  max-height: 150px;
 }
 
 .cover-img{
