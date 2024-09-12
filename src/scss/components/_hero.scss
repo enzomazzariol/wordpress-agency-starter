@@ -36,17 +36,23 @@
 }
 
 .cover-pages-title {
+  height: 150px;
+  h1{
+    font-size: 2rem;
+  }
   @media (min-width: 768px) {
     height: 250px;
+    h1{
+      font-size: 3rem;
+    }
   }
-  height: 150px;
 }
 
 .cover-pages-img {
+  max-height: 150px;
   @media (min-width: 768px) {
     max-height: 250px;
   }
-  max-height: 150px;
 }
 
 .cover-img{

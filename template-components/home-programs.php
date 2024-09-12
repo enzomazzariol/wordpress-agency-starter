@@ -7,7 +7,7 @@ $program3 = $program['program_3'];
 $program4 = $program['program_4'];
 ?>
 
-<section class="container-fluid px-0 program mt-5 bg--orange">
+<section id="programs" class="container-fluid px-0 program mt-5 bg--orange">
   <div class="program-bg px-0 pb-5">
     <img class="program-bg-img" src="<?php echo esc_url($program['background_image']); ?>" alt="background">
     <div class="program-bg-wrapper d-flex flex-column justify-content-center align-items-center">
