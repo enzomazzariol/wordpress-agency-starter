@@ -584,3 +584,51 @@ function create_relatedposts_shortcode() {
 
 	wp_reset_postdata();
 }
+
+//Acordeon
+function my_custom_accordion_shortcode( $atts = [], $content = null ) {
+    // Normalize line breaks
+    $content = str_replace(array("\r\n", "\r"), "\n", $content);
+    $lines = explode("\n", trim($content));
+    $atts = shortcode_atts(
+        array(
+            'id' => '1', // Default ID if none is provided
+        ),
+        $atts,
+        'custom_accordion'
+    );
+
+    // Ensure the ID is safe to use in HTML
+    $id = intval($atts['id']);
+
+    // Start the accordion container
+    $html = '<div class="accordion" id="accordionExample">';
+
+    foreach ($lines as $index => $line) {
+        if (trim($line) == '') continue; // Skip empty lines
+        list($question, $answer) = explode('|', $line, 2);
+        
+        // Ensure each accordion item has unique targets and controls
+        $headingId = 'heading' . $id . '-' . $index;
+        $collapseId = 'collapse' . $id . '-' . $index;
+        
+        // Accordion item
+        $html .= '<div class="accordion-item question">
+                    <div id="' . esc_attr($headingId) . '">
+                      <button class="accordion-button ' . ($index !== 0 ? 'collapsed' : '') . ' d-flex justify-content-between py-4" type="button" data-bs-toggle="collapse" data-bs-target="#' . esc_attr($collapseId) . '" aria-expanded="' . ($index === 0 ? 'true' : 'false') . '" aria-controls="' . esc_attr($collapseId) . '">
+                        <h3 class="w-75 question-text">' . esc_html($question) . '</h3>
+                        <img class="plus-icon" src="' . get_template_directory_uri() . '/dist/assets/images/faqs/plus.svg" alt="plus icon">
+                      </button>
+                    </div>
+                    <div id="' . esc_attr($collapseId) . '" class="accordion-collapse collapse ' . ($index === 0 ? 'show' : '') . '" aria-labelledby="' . esc_attr($headingId) . '" data-bs-parent="#accordionExample-' . esc_attr($id) . '">
+                      <div class="accordion-body mb-4">' . apply_filters('meta_content', wp_kses_post($answer)) . '</div>
+                    </div>
+                  </div>';
+    }
+
+    // Close the accordion container
+    $html .= '</div>';
+
+    return $html;
+}
+add_shortcode('custom_accordion', 'my_custom_accordion_shortcode');

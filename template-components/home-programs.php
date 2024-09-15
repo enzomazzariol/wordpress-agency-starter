@@ -97,7 +97,7 @@ $program4 = $program['program_4'];
         <!--Card 2 -->
         <div class="carousel-programs-slide">
           <div class="program-card">
-          <a href="<?php echo esc_url($program1['program_url']); ?>">
+          <a href="<?php echo esc_url($program2['program_url']); ?>">
 
             <img class="program-img" src="<?php echo esc_url($program2['image']); ?>" alt="background">
             <div
@@ -111,7 +111,7 @@ $program4 = $program['program_4'];
         <!--Card 3 -->
         <div class="carousel-programs-slide">
           <div class="program-card">
-          <a href="<?php echo esc_url($program1['program_url']); ?>">
+          <a href="<?php echo esc_url($program3['program_url']); ?>">
 
             <img class="program-img" src="<?php echo esc_url($program3['image']); ?>" alt="background">
             <div
@@ -125,7 +125,7 @@ $program4 = $program['program_4'];
         <!--Card 4 -->
         <div class="carousel-programs-slide">
           <div class="program-card">
-          <a href="<?php echo esc_url($program1['program_url']); ?>">
+          <a href="<?php echo esc_url($program4['program_url']); ?>">
 
             <img class="program-img" src="<?php echo esc_url($program4['image']); ?>" alt="background">
             <div
