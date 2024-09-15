@@ -602,7 +602,7 @@ function my_custom_accordion_shortcode( $atts = [], $content = null ) {
     $id = intval($atts['id']);
 
     // Start the accordion container
-    $html = '<div class="accordion" id="accordionExample">';
+    $html = '<div class="accordion" id="accordionExample-' . esc_attr($id) . '">';
 
     foreach ($lines as $index => $line) {
         if (trim($line) == '') continue; // Skip empty lines
@@ -614,9 +614,12 @@ function my_custom_accordion_shortcode( $atts = [], $content = null ) {
         
         // Accordion item
         $html .= '<div class="accordion-item question">
+
                     <div id="' . esc_attr($headingId) . '">
-                      <button class="accordion-button ' . ($index !== 0 ? 'collapsed' : '') . ' d-flex justify-content-between py-4" type="button" data-bs-toggle="collapse" data-bs-target="#' . esc_attr($collapseId) . '" aria-expanded="' . ($index === 0 ? 'true' : 'false') . '" aria-controls="' . esc_attr($collapseId) . '">
-                        <h3 class="w-75 question-text">' . esc_html($question) . '</h3>
+        
+					<button class="accordion-button ' . ($index !== 0 ? 'collapsed' : '') . ' d-flex justify-content-between py-4" type="button" data-bs-toggle="collapse" data-bs-target="#' . esc_attr($collapseId) . '" aria-expanded="' . ($index === 0 ? 'true' : 'false') . '" aria-controls="' . esc_attr($collapseId) . '">
+                     
+					<h3 class="w-75 question-text">' . esc_html($question) . '</h3>
                         <img class="plus-icon" src="' . get_template_directory_uri() . '/dist/assets/images/faqs/plus.svg" alt="plus icon">
                       </button>
                     </div>
