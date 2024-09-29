@@ -42,10 +42,10 @@ get_header();
 
 <?php 
 
-
+$glossaryposts = get_posts( $args ); 
 $posts = get_posts(array(
     'posts_per_page'    => 12,
-    'post_type'         => 'teachers'
+    'post_type'         => 'teachers',
 ));
 
 if( $posts ): ?>

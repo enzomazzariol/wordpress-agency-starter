@@ -40,10 +40,6 @@ $navbar-togle-collapse-line: #ddd;
 
       /* Safari seems to support, but seems deprecated and does the same thing as the others. */
       image-rendering: -webkit-optimize-contrast;
-      @include media-breakpoint-down(md) {
-        width: auto;
-        max-height: 30px;
-      }
     }
     &-subtitle{
       font-size: 0.9rem;
